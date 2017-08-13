@@ -1,0 +1,13 @@
+C:\Git\Notarize\Notarize\Notarize.BusinessLogic\bin\Debug\Notarize.BusinessLogic.dll
+C:\Git\Notarize\Notarize\Notarize.BusinessLogic\bin\Debug\Notarize.BusinessLogic.pdb
+C:\Git\Notarize\Notarize\Notarize.BusinessLogic\bin\Debug\Ninject.dll
+C:\Git\Notarize\Notarize\Notarize.BusinessLogic\bin\Debug\Notarize.Core.dll
+C:\Git\Notarize\Notarize\Notarize.BusinessLogic\bin\Debug\Notarize.DataAccess.dll
+C:\Git\Notarize\Notarize\Notarize.BusinessLogic\bin\Debug\Dapper.dll
+C:\Git\Notarize\Notarize\Notarize.BusinessLogic\bin\Debug\Notarize.Core.pdb
+C:\Git\Notarize\Notarize\Notarize.BusinessLogic\bin\Debug\Notarize.DataAccess.pdb
+C:\Git\Notarize\Notarize\Notarize.BusinessLogic\bin\Debug\Ninject.xml
+C:\Git\Notarize\Notarize\Notarize.BusinessLogic\bin\Debug\Dapper.xml
+C:\Git\Notarize\Notarize\Notarize.BusinessLogic\obj\Debug\Notarize.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Git\Notarize\Notarize\Notarize.BusinessLogic\obj\Debug\Notarize.BusinessLogic.dll
+C:\Git\Notarize\Notarize\Notarize.BusinessLogic\obj\Debug\Notarize.BusinessLogic.pdb

@@ -1,0 +1,11 @@
+C:\Git\Notarize\Notarize\Notarize.DataAccess\bin\Debug\Notarize.DataAccess.dll
+C:\Git\Notarize\Notarize\Notarize.DataAccess\bin\Debug\Notarize.DataAccess.pdb
+C:\Git\Notarize\Notarize\Notarize.DataAccess\bin\Debug\Dapper.dll
+C:\Git\Notarize\Notarize\Notarize.DataAccess\bin\Debug\Ninject.dll
+C:\Git\Notarize\Notarize\Notarize.DataAccess\bin\Debug\Notarize.Core.dll
+C:\Git\Notarize\Notarize\Notarize.DataAccess\bin\Debug\Notarize.Core.pdb
+C:\Git\Notarize\Notarize\Notarize.DataAccess\bin\Debug\Dapper.xml
+C:\Git\Notarize\Notarize\Notarize.DataAccess\bin\Debug\Ninject.xml
+C:\Git\Notarize\Notarize\Notarize.DataAccess\obj\Debug\Notarize.DataAccess.csprojResolveAssemblyReference.cache
+C:\Git\Notarize\Notarize\Notarize.DataAccess\obj\Debug\Notarize.DataAccess.dll
+C:\Git\Notarize\Notarize\Notarize.DataAccess\obj\Debug\Notarize.DataAccess.pdb

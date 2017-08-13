@@ -1,4 +1,5 @@
-﻿using Notarize.BusinessLogic.Models;
+﻿using Notarize.BusinessLogic.Interfaces;
+using Notarize.BusinessLogic.Models;
 using Notarize.Core.Enumerations;
 using Notarize.Core.Models;
 using Notarize.DataAccess.Interfaces;
@@ -7,7 +8,7 @@ using System.Security.Claims;
 
 namespace Notarize.BusinessLogic.Managers
 {
-    public class UserManager
+    public class UserManager : IUserManager
     {
         IUserRepository UserRepo;
 
@@ -54,9 +55,8 @@ namespace Notarize.BusinessLogic.Managers
                     List<Claim> claims = new List<Claim>();
                     claims.Add(new Claim("Username", user.Username));
                     claims.Add(new Claim("Role", user.Role.ToClaimString()));
-
-                    ClaimsIdentity identity = new ClaimsIdentity(claims, "password");
-                    result.Principal = new ClaimsPrincipal(identity);
+                    
+                    result.Identity = new ClaimsIdentity(claims, "ApplicationCookie");
 
                     result.Success = true;
                 }

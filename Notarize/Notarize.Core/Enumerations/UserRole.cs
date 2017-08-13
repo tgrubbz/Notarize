@@ -4,6 +4,8 @@ namespace Notarize.Core.Enumerations
 {
     public enum UserRole
     {
+        Admin,
+        Notary
     }
 
     public static class UserRoleExtensions

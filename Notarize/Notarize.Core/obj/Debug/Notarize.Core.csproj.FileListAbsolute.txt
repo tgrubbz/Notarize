@@ -1,0 +1,5 @@
+C:\Git\Notarize\Notarize\Notarize.Core\bin\Debug\Notarize.Core.dll
+C:\Git\Notarize\Notarize\Notarize.Core\bin\Debug\Notarize.Core.pdb
+C:\Git\Notarize\Notarize\Notarize.Core\obj\Debug\Notarize.Core.csprojResolveAssemblyReference.cache
+C:\Git\Notarize\Notarize\Notarize.Core\obj\Debug\Notarize.Core.dll
+C:\Git\Notarize\Notarize\Notarize.Core\obj\Debug\Notarize.Core.pdb

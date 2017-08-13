@@ -43,10 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogicModule.cs" />
+    <Compile Include="Interfaces\IUserManager.cs" />
+    <Compile Include="Managers\UserManager.cs" />
+    <Compile Include="Models\LoginResult.cs" />
+    <Compile Include="PasswordHasher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Notarize.Core\Notarize.Core.csproj">
+      <Project>{c2c5d0b2-99f6-4843-97a0-ecfba5d2d0ac}</Project>
+      <Name>Notarize.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Notarize.DataAccess\Notarize.DataAccess.csproj">
+      <Project>{174f859d-5dff-467b-a28c-b72062108f29}</Project>
+      <Name>Notarize.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

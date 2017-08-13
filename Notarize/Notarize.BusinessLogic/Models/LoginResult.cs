@@ -1,4 +1,5 @@
-﻿using System.Security.Claims;
+﻿using Notarize.Core.Models;
+using System.Security.Claims;
 
 namespace Notarize.BusinessLogic.Models
 {
@@ -6,6 +7,7 @@ namespace Notarize.BusinessLogic.Models
     {
         public bool Success { get; set; }
         public string Error { get; set; }
-        public ClaimsPrincipal Principal { get; set; }
+        public ClaimsIdentity Identity { get; set; }
+        public User User { get; set; }
     }
 }
