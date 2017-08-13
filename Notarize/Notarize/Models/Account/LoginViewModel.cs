@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Notarize.Models
+namespace Notarize.Models.Account
 {
     public class LoginViewModel
     {
@@ -13,5 +9,7 @@ namespace Notarize.Models
 
         [Required]
         public string Password { get; set; }
+
+        public bool RememberMe { get; set; }
     }
 }

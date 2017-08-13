@@ -2,6 +2,7 @@
 using Notarize.BusinessLogic.Interfaces;
 using Notarize.BusinessLogic.Models;
 using Notarize.Core.Enumerations;
+using Notarize.Models.Account;
 using System.Web;
 using System.Web.Mvc;
 
@@ -10,37 +11,49 @@ namespace Notarize.Controllers
     public class AccountController : Controller
     {
         IUserManager UserManager;
-        IAuthenticationManager AuthManager;
 
         public AccountController(IUserManager usermanager)
         {
             UserManager = usermanager;
-            AuthManager = Request.GetOwinContext().Authentication;
         }
 
         [HttpGet]
         public ActionResult Login()
         {
+            if(User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
             return View();
         }
 
         [HttpPost]
-        public ActionResult Login(string username, string password)
+        public ActionResult Login(LoginViewModel model)
         {
             if (!ModelState.IsValid)
             {
                 return View();
             }
 
-            LoginResult result = UserManager.Login(username, password);
+            LoginResult result = UserManager.Login(model.Username, model.Password);
             if (!result.Success)
             {
                 ModelState.AddModelError("", result.Error);
                 return View();
             }
-            
-            AuthManager.SignIn(result.Identity);
+
+            IAuthenticationManager authManager = Request.GetOwinContext().Authentication;
+            authManager.SignIn(new AuthenticationProperties() { IsPersistent = model.RememberMe }, result.Identity);
             return RedirectToAction("Index", "Home", new { area = GetArea(result.User.Role) });
+        }
+
+        [HttpPost]
+        public ActionResult Logout()
+        {
+            IAuthenticationManager authManager = Request.GetOwinContext().Authentication;
+            authManager.SignOut("AuthorizationCookie");
+            return RedirectToAction("Login");
         }
 
         private string GetArea(UserRole role)

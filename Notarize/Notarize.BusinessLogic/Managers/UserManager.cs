@@ -55,8 +55,9 @@ namespace Notarize.BusinessLogic.Managers
                     List<Claim> claims = new List<Claim>();
                     claims.Add(new Claim("Username", user.Username));
                     claims.Add(new Claim("Role", user.Role.ToClaimString()));
+                    claims.Add(new Claim(ClaimTypes.Name, user.Username));
                     
-                    result.Identity = new ClaimsIdentity(claims, "ApplicationCookie");
+                    result.Identity = new ClaimsIdentity(claims, "AuthenticationCookie");
 
                     result.Success = true;
                 }
